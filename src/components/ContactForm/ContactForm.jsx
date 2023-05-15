@@ -36,9 +36,9 @@ const ContactForm = () => {
     contacts.find(item => item.name.toLowerCase() === newName.toLowerCase())
       ? alert(`${newName} is already in contacts`)
       : dispatch(addContact({ name, number })) &&
-      alert(`${newName} has added to your phonebook`);
+      alert(`${newName} has added to your phonebook`) && setState(initialState);
         
-    setState(initialState);
+   
   };
 
   return (
