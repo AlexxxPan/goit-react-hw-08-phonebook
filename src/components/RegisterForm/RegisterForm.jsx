@@ -37,10 +37,7 @@ export const RegisterForm = () => {
     e.preventDefault();
 
     dispatch(register({ name, email, password }));
-    setName('');
-    setEmail('');
-    setPassword('');
-  };
+ };
 
   return (
     <Form autoComplete="off" onSubmit={handleSubmit}>

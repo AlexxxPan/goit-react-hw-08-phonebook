@@ -26,11 +26,11 @@ export const LoginForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    const form = e.currentTarget;
+    // const form = e.currentTarget;
 
     const { email, password } = state;
     dispatch(logIn({ email, password }));
-    form.reset();
+    // form.reset();
   };
 
   return (
