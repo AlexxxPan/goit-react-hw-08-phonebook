@@ -1,5 +1,5 @@
 import { lazy } from 'react';
-import { Route, Routes } from 'react-router-dom';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { Layout } from './Layout';
 import { Register } from 'pages/Register';
 import { HomePage } from 'pages/Home';
